@@ -1,0 +1,65 @@
+/* Color Variables */
+.color-primary{
+  color: hsl(172, 67%, 15%)
+}
+
+.color-secondary-extra-dark{
+  color: hsl(183, 100%,15%)
+}
+
+.color-secondary-dark{
+  color: hsl(186, 14%, 43%)
+}
+
+.color-secondary-lighter-dark{
+  color: hsl(184, 14%, 56%)
+}
+
+.color-secondary-light{
+  color: hsl(185, 41%, 84%)
+}
+
+.color-secondary-lighter{
+  color: hsl(189, 41%, 97%)
+}
+
+.color-lightest{
+  color: hsl(0,0,100%)
+}
+/* Background Colors*/
+.background-primary{
+  background-color: hsl(172, 67%, 15%)
+}
+
+.background-secondary-extra-dark{
+  background-color: hsl(183, 100%,15%)
+}
+
+.background-secondary-dark{
+  background-color: hsl(186, 14%, 43%)
+}
+
+.background-secondary-lighter-dark{
+  background-color: hsl(184, 14%, 56%);
+}
+
+.background-secondary-light{
+  background-color: hsl(185, 41%, 84%)
+}
+
+.background-secondary-lighter{
+  background-color: hsl(189, 41%, 97%)
+}
+
+.background-lightest{
+  background-color: white
+}
+/* Elements */
+
+.interface {
+  margin: 200px 300px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
