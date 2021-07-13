@@ -6,50 +6,58 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body class="body background-secondary-light">
   <div class="interface background-lightest">
-    <div>
+    <div class="input">
       <div>
-        <p>
+        <div class="padding-under">
           Bill
           <br>
           <input type="textarea">
-        </p>
+        </div>
       </div>
       <div>
-        <p>
+        <div class="padding-under">
           Select Tip %
-          5%
-          10%
-          15%
-          25%
-          50%
-          Custom
-        </p>
+          <div class="custom-radio">
+            5%
+            10%
+            15%
+            25%
+            50%
+            Custom
+          </div>
+        </div>
       </div>
       <div>
-        <p>
+        <div>
           Number of People
           <br>
           <input type="textarea">
-        </p>
+        </div>
         
       </div>
     </div>
-    <div class="background-primary">
-      <p>
-        Tip Amount
-        / person
-      </p>
-      <p>
-        Total
-        / person
-      </p>
-      Reset
+    <div class="background-primary output">
+      <div class="breakdown">
+        <div class="padding-under">
+          Tip Amount
+          <br>
+          / person
+        </div>
+        <div>
+          Total
+          <br>
+          / person
+        </div>
+      </div>
+      <div class="button">
+        Reset
+      </div>
     </div>
   </div>
   <div class="attribution">
