@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 /* Color Variables */
 .color-primary{
   color: hsl(172, 67%, 15%)
@@ -44,11 +46,11 @@
 }
 
 .background-secondary-light{
-  background-color: hsl(185, 41%, 84%)
+  background-color: hsl(185, 41%, 84%);
 }
 
 .background-secondary-lighter{
-  background-color: hsl(189, 41%, 97%)
+  background-color: hsl(189, 41%, 97%);
 }
 
 .background-lightest{
@@ -58,7 +60,35 @@
 html{
   height: 100%;
 }
+
+input{
+  width: 100%;
+  background-color: hsl(185, 41%, 84%);
+  color: var(--color-primary);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  text-indent: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: +2px;
+}
+
+.dollar-icon{
+  background-image: url('icon-dollar.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+}
+
+.person-icon{
+  background-image: url('icon-person.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+}
 .body{
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -88,8 +118,6 @@ html{
 .input{
   display: flex;
   flex-direction: column;
-  padding: 0 2em 0 0;
-  margin: 0 2em 0 0;
   color: hsl(186, 14%, 43%);
   min-width: 35%;
 }
@@ -103,6 +131,11 @@ html{
 
 .padding-under{
   padding-bottom: 3em;
+}
+
+.per-person{
+  color: hsl(186, 14%, 43%);
+  font-size: 18px;
 }
 
 .button{
