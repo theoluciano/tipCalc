@@ -28,6 +28,10 @@
 .color-lightest{
   color: hsl(0,0,100%)
 }
+
+.color-active{
+  color: hsl(154, 69%, 53%)
+}
 /* Background Colors*/
 .background-primary{
   background-color: hsl(172, 67%, 15%)
@@ -62,17 +66,24 @@ html{
 }
 
 input{
-  width: 100%;
+  width: 80%;
+  border-width: 2px;
   background-color: hsl(185, 41%, 84%);
   color: var(--color-primary);
-  border: none;
+  border-color: hsl(185, 41%, 84%);
+  border-style: solid;
   outline: none;
-  border-radius: 5px;
-  padding: 10px 0px 10px 0px;
-  text-indent: 40px;
+  padding: 10px 20px 10px 40px;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: +2px;
+  text-align: right;
+  border-radius: 10px;
+}
+
+input:focus{
+  border-width: 2px;
+  border-color: hsl(154, 69%, 53%);
 }
 
 .dollar-icon{
@@ -81,10 +92,22 @@ input{
   background-position: 10px 15px;
 }
 
+.dollar-icon::-webkit-outer-spin-button,
+.dollar-icon::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .person-icon{
   background-image: url('icon-person.svg');
   background-repeat: no-repeat;
   background-position: 10px 15px;
+}
+
+.person-icon::-webkit-outer-spin-button,
+.person-icon::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
 }
 .body{
   font-family: 'Space Mono', monospace;
@@ -130,7 +153,7 @@ input{
 }
 
 .padding-under{
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 .per-person{
@@ -138,10 +161,74 @@ input{
   font-size: 18px;
 }
 
-.button{
+button{
+  border: none;
+  width: 100%;
+  font-size: 20px;
   padding: 1em;
   text-align: center;
   border-radius: 15px;
   background-color: hsl(183, 100%,18%);
   color:hsl(172, 67%, 15%)
+}
+
+button:active{
+  background-color: hsl(154, 69%, 53%);
+}
+
+.custom-radio{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio-label {
+  display:flex;
+  background: hsl(172, 67%, 15%);
+  border-radius: 4px;
+  padding: 10px;
+  width: 25%;
+  color: white;
+  margin: 5px;
+  justify-content: center;
+}
+
+.radio-button:checked + label {
+  background: hsl(154, 69%, 53%);
+  box-shadow:rgb(79, 79, 79);
+}
+
+.radio-button {
+  display: none;
+}
+
+.radio-input{
+  border-color: hsl(172, 67%, 15%);
+  font-size: 24px;
+  font-weight: 400;
+  display:flex;
+  background: hsl(172, 67%, 15%);
+  padding: 8px;
+  width: 25%;
+  color: white;
+  margin: 5px;
+  justify-content: center;
+  border-radius: 4px;
+  text-align: center;
+  outline-color: hsl(172, 67%, 15%);
+  outline: 2px;
+  outline-offset: -10;
+}
+
+.radio-input::-webkit-outer-spin-button,
+.radio-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder{
+  color: white;
+}
+
+.small-padding{
+  margin-top: 4px;
 }

@@ -16,28 +16,35 @@
       <div>
         <div class="padding-under">
           Bill
-          <br>
-          <input type="textarea" class="dollar-icon">
+          <div class="small-padding"></div>
+          <input type="number" class="dollar-icon">
         </div>
       </div>
       <div>
         <div class="padding-under">
           Select Tip %
-          <div class="custom-radio">
-            5%
-            10%
-            15%
-            25%
-            50%
-            Custom
+          <div>
+            <label class="custom-radio">
+              <input id="5" class="radio-button" name="tip-percent" type="radio"></input>
+              <label for="5" class="radio-label">5%</label>
+              <input id="10" class="radio-button" name="tip-percent" type="radio"></input>
+              <label for="10" class="radio-label">10%</label>
+              <input id="15" class="radio-button" name="tip-percent" type="radio"></input>
+              <label for="15" class="radio-label">15%</label>
+              <input id="25" class="radio-button" name="tip-percent" type="radio"></input>
+              <label for="25" class="radio-label">25%</label>
+              <input id="50" class="radio-button" name="tip-percent" type="radio"></input>
+              <label for="50" class="radio-label">50%</label>
+              <input class="radio-input" name="tip-percent" type="number" placeholder="Custom"></input>
+            </label>
           </div>
         </div>
       </div>
       <div>
         <div>
           Number of People
-          <br>
-          <input type="textarea" class="person-icon">
+          <div class="small-padding"></div>
+          <input type="number" class="person-icon">
         </div>
         
       </div>
@@ -59,9 +66,9 @@
           </div>
         </div>
       </div>
-      <div class="button">
+      <button type="button" class="button">
         Reset
-      </div>
+      </button>
     </div>
   </div>
   <div class="attribution">
