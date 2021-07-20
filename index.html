@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="tipCalc.js"></script>
   <title>Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,7 +17,7 @@
         <div class="padding-under">
           Bill
           <div class="small-padding"></div>
-          <input type="number" class="dollar-icon">
+          <input type="number" class="dollar-icon" placeholder="0">
         </div>
       </div>
       <div>
@@ -44,26 +44,32 @@
         <div>
           Number of People
           <div class="small-padding"></div>
-          <input type="number" class="person-icon">
+          <input type="number" class="person-icon" placeholder="0">
         </div>
         
       </div>
     </div>
     <div class="background-primary output">
       <div class="breakdown">
-        <div class="padding-under">
-          Tip Amount
-          <br>
+        <div class="amount-result padding-under">
+          <div class="tip-amount">
+            Tip Amount
+            <br>
             <div class="per-person">
               / person
             </div>
-        </div>
-        <div>
-          Total
-          <br>
-          <div class="per-person">
-            / person
           </div>
+          $0.00
+        </div>
+        <div class="total-result">
+          <div class="total-per-person">
+            Total
+            <br>
+            <div class="per-person">
+              / person
+            </div>
+          </div>
+          $0.00
         </div>
       </div>
       <button type="button" class="button">
