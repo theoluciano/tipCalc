@@ -169,9 +169,9 @@ button{
   border: none;
   width: 100%;
   font-size: 20px;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 4px;
   background-color:  hsl(154, 69%, 53%);
   color:hsl(172, 67%, 15%)
 }
@@ -198,6 +198,11 @@ button:disabled{
   color: white;
   margin: 5px;
   justify-content: center;
+}
+
+.radio-label:hover{
+  cursor: pointer;
+  background: hsl(172, 67%, 30%)
 }
 
 .radio-button:checked + label {
