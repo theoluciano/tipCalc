@@ -88,26 +88,26 @@ input:focus{
   border-color: hsl(154, 69%, 53%);
 }
 
-.dollar-icon{
+.bill-input{
   background-image: url('icon-dollar.svg');
   background-repeat: no-repeat;
   background-position: 10px 20px;
 }
 
-.dollar-icon::-webkit-outer-spin-button,
-.dollar-icon::-webkit-inner-spin-button{
+.bill-input::-webkit-outer-spin-button,
+.bill-input::-webkit-inner-spin-button{
   -webkit-appearance: none;
   margin: 0;
 }
 
-.person-icon{
+.people-input{
   background-image: url('icon-person.svg');
   background-repeat: no-repeat;
   background-position: 10px 20px;
 }
 
-.person-icon::-webkit-outer-spin-button,
-.person-icon::-webkit-inner-spin-button{
+.people-input::-webkit-outer-spin-button,
+.people-input::-webkit-inner-spin-button{
   -webkit-appearance: none;
   margin: 0;
 }

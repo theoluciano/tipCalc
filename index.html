@@ -17,7 +17,7 @@
         <div class="padding-under">
           Bill
           <div class="small-padding"></div>
-          <input type="number" class="dollar-icon" placeholder="0">
+          <input type="number" step="0.01" min=0 class="bill-input" placeholder="0" id="bill-input" onChange="getBillInput()">
         </div>
       </div>
       <div>
@@ -44,7 +44,7 @@
         <div>
           Number of People
           <div class="small-padding"></div>
-          <input type="number" class="person-icon" placeholder="0">
+          <input type="number" class="people-input" min=0 placeholder="0" id="people-input" onChange="getPeopleInput()">
         </div>
         
       </div>
