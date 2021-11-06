@@ -24,18 +24,18 @@
         <div class="padding-under">
           Select Tip %
           <div>
-            <label class="custom-radio">
-              <input id="5" class="radio-button" name="tip-percent" type="radio" checked></input>
+            <label class="custom-radio" id="custom-radio">
+              <input id="5" class="radio-button" name="tip-percent" type="radio" checked onclick="clearCustomInput()"></input>
               <label for="5" class="radio-label">5%</label>
-              <input id="10" class="radio-button" name="tip-percent" type="radio"></input>
+              <input id="10" class="radio-button" name="tip-percent" type="radio" onclick="clearCustomInput()"></input>
               <label for="10" class="radio-label">10%</label>
-              <input id="15" class="radio-button" name="tip-percent" type="radio"></input>
+              <input id="15" class="radio-button" name="tip-percent" type="radio" onclick="clearCustomInput()"></input>
               <label for="15" class="radio-label">15%</label>
-              <input id="25" class="radio-button" name="tip-percent" type="radio"></input>
+              <input id="25" class="radio-button" name="tip-percent" type="radio" onclick="clearCustomInput()"></input>
               <label for="25" class="radio-label">25%</label>
-              <input id="50" class="radio-button" name="tip-percent" type="radio"></input>
+              <input id="50" class="radio-button" name="tip-percent" type="radio" onclick="clearCustomInput()"></input>
               <label for="50" class="radio-label">50%</label>
-              <input id="custom" class="radio-input" name="tip-percent" type="number" placeholder="Custom"></input>
+              <input id="custom" class="radio-input" name="tip-percent" type="number" placeholder="Custom" onclick="clearRadio()"></input>
             </label>
           </div>
         </div>
@@ -59,7 +59,7 @@
               / person
             </div>
           </div>
-          $0.00
+          <span id="tip-total">$0.00</span>
         </div>
         <div class="total-result">
           <div class="total-per-person">
@@ -69,10 +69,10 @@
               / person
             </div>
           </div>
-          $0.00
+          <span id="per-person-total">$0.00</span>
         </div>
       </div>
-      <button type="button" class="button">
+      <button type="button" class="button" id="reset" onclick = clickReset() >
         Reset
       </button>
     </div>
